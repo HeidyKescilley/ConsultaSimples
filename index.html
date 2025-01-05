@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automação Simples Nacional</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    header h2 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    main {
+      flex: 1;
+    }
+    .features {
+      padding: 2rem 0;
+    }
+    .features h2 {
+      color: #007bff;
+      margin-bottom: 1rem;
+    }
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .cta-btn {
+      background-color: #007bff;
+      color: white;
+      font-size: 1.2rem;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      margin: 0 0.5rem;
+    }
+    .cta-btn:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h2>Consulta Simples</h2>
+      <p>Transforme o trabalho repetitivo em eficiência com nossa solução inteligente!</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="container features">
+      <h2 class="text-center">Chega de Consultas Manuais!</h2>
+      <p class="text-center mb-4">
+        Todo fim de ano, milhares de empresas são excluídas do Simples Nacional, e você, contador, 
+        precisa gastar tempo e esforço consultando cada CNPJ para verificar se a empresa foi ou não excluída. 
+        Nossa automação faz isso por você, em poucos segundos!
+      </p>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h4 class="card-title">🚀 Agilidade</h4>
+              <p class="card-text">Consulte dezenas de CNPJs de uma vez só e ganhe tempo para focar no que realmente importa.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h4 class="card-title">📊 Relatório Completo</h4>
+              <p class="card-text">Descubra quais empresas foram excluídas, quais permanecem no Simples e a data da exclusão.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h4 class="card-title">💼 Economia de Tempo</h4>
+              <p class="card-text">Elimine o trabalho repetitivo e aumente a produtividade do seu escritório de contabilidade.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <h3 class="text-primary mb-4">Pronto para facilitar sua rotina?</h3>
+        <p class="mb-4">
+          Clique nos botões abaixo para falar diretamente conosco ou veja uma demonstração de como a automação funciona.
+        </p>
+        <button class="cta-btn" onclick="redirectToWhatsApp()">Fale Agora no WhatsApp</button>
+        <button class="cta-btn" onclick="redirectToDemo()">Veja uma Demonstração</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Automação Simples Nacional. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function redirectToWhatsApp() {
+      window.open(
+        "https://api.whatsapp.com/send?phone=5561992213786&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20automação%20de%20consulta%20do%20Simples%20Nacional.",
+        "_blank"
+      );
+    }
+
+    function redirectToDemo() {
+      window.open("https://youtu.be/AmN2Lr0ISLM", "_blank");
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
