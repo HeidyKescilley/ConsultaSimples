@@ -15,56 +15,77 @@
       display: flex;
       flex-direction: column;
       min-height: 100vh;
+      background-color: #f8f9fa; /* Fundo geral mais claro */
     }
     header {
-      background-color: #007bff;
+      background-color: #003d7a; /* Azul mais elegante */
       color: white;
-      padding: 2rem 0;
+      padding: 1.5rem 0;
       text-align: center;
     }
     header h2 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.2rem; /* Melhorado para um título mais limpo */
+      margin: 0;
     }
-    header p {
+    .subtitle {
+      background-color: #f8f9fa; /* Contraste claro */
+      color: #003d7a; /* Azul escuro */
+      text-align: center;
+      padding: 1rem;
       font-size: 1.2rem;
-    }
-    main {
-      flex: 1;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
     .features {
-      padding: 2rem 0;
+      padding: 2rem 1rem;
     }
     .features h2 {
-      color: #007bff;
+      color: #003d7a;
       margin-bottom: 1rem;
     }
     .card {
       border: none;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     }
     .cta-btn {
-      background-color: #007bff;
+      background-color: #003d7a;
       color: white;
       font-size: 1.2rem;
-      padding: 0.8rem 1.5rem;
+      padding: 0.8rem 1.2rem;
       border: none;
       border-radius: 5px;
       transition: background-color 0.3s;
-      margin: 0 0.5rem;
+      margin: 0.5rem;
     }
     .cta-btn:hover {
-      background-color: #0056b3;
+      background-color: #002c5e;
     }
     footer {
       background-color: #343a40;
       color: white;
       text-align: center;
-      padding: 1rem 0;
+      padding: 0.8rem 0;
       position: relative;
       bottom: 0;
       width: 100%;
+    }
+    @media (max-width: 768px) {
+      header h2 {
+        font-size: 1.8rem;
+      }
+      .subtitle {
+        font-size: 1rem;
+      }
+      .cta-btn {
+        font-size: 1rem;
+        padding: 0.7rem 1rem;
+      }
     }
   </style>
 </head>
@@ -73,9 +94,12 @@
   <header>
     <div class="container">
       <h2>Consulta Simples</h2>
-      <p>Transforme o trabalho repetitivo em eficiência com nossa solução inteligente!</p>
     </div>
   </header>
+
+  <div class="subtitle">
+    Transforme o trabalho repetitivo em eficiência com nossa solução inteligente!
+  </div>
 
   <main>
     <div class="container features">
@@ -118,14 +142,14 @@
         <p class="mb-4">
           Clique nos botões abaixo para falar diretamente conosco ou veja uma demonstração de como a automação funciona.
         </p>
-        <button class="cta-btn" onclick="redirectToWhatsApp()">Fale Agora no WhatsApp</button>
-        <button class="cta-btn" onclick="redirectToDemo()">Veja uma Demonstração</button>
+        <button class="btn btn-success" onclick="redirectToWhatsApp()">Fale Agora no WhatsApp</button>
+        <button class="btn btn-primary" onclick="redirectToDemo()">Veja uma Demonstração</button>
       </div>
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Automação Simples Nacional. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Consulta Simples. Todos os direitos reservados.</p>
   </footer>
 
   <script>
